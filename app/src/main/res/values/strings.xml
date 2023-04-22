@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gif</string>
+    <string name="if_you_have_an_account_click_here">If you have an account Click here.</string>
+    <string name="create_acount">Create Acount</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">LOGIN</string>
+    <string name="log_in">Log in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>
