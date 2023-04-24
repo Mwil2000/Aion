@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gif" >
+    package="com.example.gif">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -16,11 +16,13 @@
         android:label="Aion"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Gif" >
-
+        android:theme="@style/Theme.Gif">
+        <activity
+            android:name=".activity_setname"
+            android:exported="false" />
         <activity
             android:name=".Splash_Screen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

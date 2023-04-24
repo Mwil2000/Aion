@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        btn_scan = findViewById(R.id.scan);
-        btn_scan.setOnClickListener(v->
-                scanCode());
+        //btn_scan = findViewById(R.id.scan);
+        //btn_scan.setOnClickListener(v-> scanCode())
 
+        scanCode();
 
     }
     private void scanCode() {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         options.setBeepEnabled(true);
         options.setOrientationLocked(true);
         options.setCaptureActivity(CaptureAct.class);
+        options.setBarcodeImageEnabled(false);
         barLauncher.launch(options);
     }
     ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(),result->
